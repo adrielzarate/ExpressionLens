@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.22.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "@expressionlens/classifier": "*"
+  },
+  "name": "@expressionlens/lab",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --pretty false",
+    "test": "vitest run"
+  },
+  "description": "AI-powered expression analysis \u2014 internal development tools"
+}

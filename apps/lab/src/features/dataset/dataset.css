@@ -1,0 +1,476 @@
+.app-navigation {
+  display: flex;
+  gap: 4px;
+  margin: -12px 0 28px;
+  border-bottom: 1px solid #dce3d7;
+}
+.app-navigation button {
+  border: 0;
+  background: none;
+  padding: 12px 15px;
+  border-bottom: 2px solid transparent;
+  color: #75806d;
+  font-size: 12px;
+}
+.app-navigation button[aria-current] {
+  border-bottom-color: #365d40;
+  color: #2c4e35;
+  font-weight: 600;
+}
+.app-navigation button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+.dataset-page {
+  display: grid;
+  gap: 22px;
+  padding-bottom: 30px;
+}
+.dataset-page .page-intro,
+.dataset-page .privacy-banner {
+  margin-bottom: 0;
+}
+.dataset-totals {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  padding: 22px;
+  margin: 0;
+  gap: 18px;
+}
+.dataset-totals dt {
+  font-size: 11px;
+  color: #71816a;
+}
+.dataset-totals dd {
+  margin: 3px 0 0;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+.class-counts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0 22px;
+  border: 1px solid #e2e9db;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.class-counts > div {
+  padding: 12px;
+  display: grid;
+  gap: 3px;
+  background: #f8faf5;
+  border-right: 1px solid #e2e9db;
+}
+.class-counts > div:last-child {
+  border-right: 0;
+}
+.class-counts strong {
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.class-counts span {
+  font:
+    11px ui-monospace,
+    monospace;
+}
+.class-counts small {
+  color: #7a8970;
+  font-size: 10px;
+}
+.quality-notes {
+  padding: 18px 22px;
+  font-size: 11px;
+  color: #6c7a61;
+  line-height: 1.8;
+}
+.quality-notes details {
+  margin-top: 8px;
+}
+.quality-notes ul {
+  padding-left: 20px;
+  margin: 5px 0;
+}
+.collection-mode {
+  display: flex;
+  border: 1px solid #dce4d6;
+  border-radius: 8px;
+  overflow: hidden;
+  width: fit-content;
+  max-width: 100%;
+}
+.collection-mode button {
+  border: 0;
+  padding: 11px 18px;
+  font-size: 12px;
+  background: #fff;
+  color: #67775d;
+}
+.collection-mode button[aria-pressed='true'] {
+  background: #2e513e;
+  color: #fff;
+}
+.collection-mode button:disabled {
+  opacity: 0.65;
+}
+.dataset-card-body {
+  padding: 20px;
+}
+.dataset-card-body > p:first-child {
+  color: #6e7e64;
+  font-size: 12px;
+  margin-bottom: 17px;
+}
+.dataset-card-body fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+.dataset-fields {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 1fr);
+  gap: 12px;
+  margin: 15px 0;
+}
+.dataset-page label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 11px;
+  color: #62755a;
+  min-width: 0;
+}
+.dataset-page input:not([type='file']),
+.dataset-page select {
+  border: 1px solid #d8e2d0;
+  border-radius: 5px;
+  padding: 9px 10px;
+  color: #334b2b;
+  background: #fcfdfb;
+  font-size: 12px;
+  min-width: 0;
+  max-width: 100%;
+}
+.dataset-page input:disabled,
+.dataset-page select:disabled {
+  opacity: 0.6;
+}
+.image-drop {
+  padding: 28px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: 1px dashed #bdcdb3;
+  background: #f8faf5;
+  border-radius: 8px;
+  text-align: center;
+}
+.image-drop.is-dragging {
+  background: #e8f2e0;
+  border-color: #648752;
+}
+.image-drop p {
+  font-size: 13px;
+}
+.image-drop small {
+  font-size: 10px;
+  color: #7c8b73;
+}
+.dataset-error {
+  font-size: 12px;
+  color: #964b31;
+  padding: 10px 0;
+  overflow-wrap: anywhere;
+}
+.batch-progress {
+  margin: 14px 0;
+  font-size: 11px;
+  color: #637b52;
+}
+.batch-progress progress {
+  display: block;
+  width: 100%;
+  height: 7px;
+  accent-color: #5d8550;
+  margin-bottom: 7px;
+}
+.batch-errors {
+  font-size: 11px;
+  margin-top: 12px;
+  color: #8c6749;
+}
+.batch-errors ul {
+  max-height: 200px;
+  overflow: auto;
+  padding-left: 20px;
+  overflow-wrap: anywhere;
+}
+.dataset-webcam {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+.dataset-webcam .dataset-fields {
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+}
+.duration-field {
+  max-width: 200px;
+  margin: 12px 0;
+}
+.capture-state {
+  background: #f1f6eb;
+  padding: 12px;
+  margin: 15px 0;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #4c6e3a;
+}
+.dataset-webcam details {
+  margin-top: 15px;
+  font-size: 11px;
+}
+.dataset-webcam details > label {
+  margin-block: 12px;
+}
+.collection-hint {
+  padding: 12px 0;
+  font-size: 11px;
+  color: #698554;
+}
+.dataset-file-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.danger-text {
+  color: #a25539 !important;
+}
+.danger-button {
+  background: #9d4d35;
+  color: #fff;
+  border-color: #9d4d35;
+}
+.import-summary,
+.clear-confirmation {
+  background: #f6f9f1;
+  padding: 18px;
+  border: 1px solid #dce6d0;
+  border-radius: 7px;
+  margin-top: 18px;
+}
+.import-summary h3,
+.clear-confirmation h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.import-summary p,
+.clear-confirmation p {
+  font-size: 11px;
+  margin-bottom: 9px;
+  overflow-wrap: anywhere;
+}
+.clear-confirmation {
+  background: #fff7f0;
+  border-color: #ead4c4;
+}
+.clear-confirmation label {
+  max-width: 240px;
+  margin: 15px 0;
+}
+.sample-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  align-items: start;
+}
+.sample-card {
+  border: 1px solid #e0e6d8;
+  border-radius: 7px;
+  padding: 15px;
+  min-width: 0;
+}
+.sample-summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 11px;
+}
+.sample-summary strong {
+  font-size: 13px;
+  text-transform: capitalize;
+  margin-right: 8px;
+}
+.sample-summary .badge {
+  font-size: 8px;
+  padding: 2px 5px;
+}
+.sample-summary p {
+  color: #6e805f;
+  margin-top: 7px;
+  overflow-wrap: anywhere;
+}
+.sample-date {
+  text-align: right;
+  color: #788b69;
+  font-size: 9px;
+}
+.sample-date small {
+  display: block;
+  margin-top: 6px;
+  overflow-wrap: anywhere;
+}
+.sample-metadata {
+  margin-top: 12px;
+  font:
+    9px/1.8 ui-monospace,
+    monospace;
+  color: #8b987c;
+  overflow-wrap: anywhere;
+}
+.sample-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  font-size: 10px;
+}
+.sample-edit {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 12px;
+  padding-top: 15px;
+}
+.feature-vector {
+  display: grid;
+  gap: 8px;
+  max-height: 360px;
+  overflow-y: auto;
+  margin: 15px 0 0;
+  padding: 12px;
+  border-top: 1px solid #e7ecdf;
+  background: #fafcf7;
+}
+.feature-vector > div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(60px, 0.5fr);
+  gap: 10px;
+  font:
+    10px ui-monospace,
+    monospace;
+}
+.feature-vector dt {
+  overflow-wrap: anywhere;
+}
+.feature-vector dd {
+  margin: 0;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.feature-vector progress {
+  display: block;
+  width: 100%;
+  accent-color: #8ba573;
+  height: 4px;
+  margin-top: 4px;
+}
+.review-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 10px;
+  color: #7c8c6f;
+}
+.dataset-empty {
+  padding: 35px 15px;
+  text-align: center;
+  color: #8a987c;
+  font-size: 12px;
+}
+.dataset-footer-note {
+  font-size: 10px;
+  color: #839375;
+}
+@media (max-width: 760px) {
+  .dataset-webcam,
+  .sample-list {
+    grid-template-columns: 1fr;
+  }
+  .dataset-webcam > .camera-panel {
+    grid-row: 1;
+  }
+  .dataset-totals {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 18px;
+    gap: 13px;
+  }
+  .dataset-totals dd {
+    font-size: 25px;
+  }
+  .class-counts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin: 0 18px;
+  }
+  .class-counts > div:nth-child(2) {
+    border-right: 0;
+  }
+  .class-counts > div:nth-child(-n + 2) {
+    border-bottom: 1px solid #e2e9db;
+  }
+  .dataset-card-body {
+    padding: 16px;
+  }
+  .dataset-fields,
+  .dataset-webcam .dataset-fields {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .app-navigation {
+    margin-top: -10px;
+  }
+  .app-navigation button {
+    padding: 10px 8px;
+    font-size: 10px;
+  }
+  .dataset-file-actions > .button {
+    flex: 1 1 140px;
+  }
+  .sample-summary {
+    flex-wrap: wrap;
+  }
+  .sample-date {
+    text-align: left;
+  }
+  .collection-mode button {
+    padding: 10px 13px;
+    font-size: 11px;
+  }
+  .review-pagination span {
+    text-align: center;
+  }
+  .quality-notes {
+    padding: 15px 18px;
+  }
+}
+
+.import-mode-field {
+  max-width: 420px;
+}
+.import-mode-description {
+  margin-top: 10px;
+  color: #6e7e64;
+  font-size: 11px;
+  line-height: 1.7;
+}
+.dataset-fields.automatic-identities {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+@media (max-width: 760px) {
+  .dataset-fields.automatic-identities {
+    grid-template-columns: 1fr;
+  }
+}

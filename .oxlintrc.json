@@ -1,0 +1,21 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "ignorePatterns": [
+    "**/dist/**",
+    "**/node_modules/**",
+    "packages/classifier/.generated/**",
+    "references/**",
+    "playwright-report/**",
+    "test-results/**"
+  ],
+  "plugins": ["react", "typescript", "oxc"],
+  "rules": {
+    "react/rules-of-hooks": "error",
+    "react/only-export-components": [
+      "warn",
+      {
+        "allowConstantExport": true
+      }
+    ]
+  }
+}

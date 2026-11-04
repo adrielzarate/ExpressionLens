@@ -1,0 +1,33 @@
+{
+  "modelId": "pankotaro/emotion2vec-plus-base-onnx",
+  "baseModelId": "emotion2vec/emotion2vec_plus_base",
+  "revision": "334d4376993c381f059cc36d2c6ed05cbfec5ca1",
+  "dtype": "fp32",
+  "license": "FunASR Model License",
+  "publicPath": "models/vocal-expression/emotion2vec-base/334d4376993c381f059cc36d2c6ed05cbfec5ca1",
+  "files": [
+    {
+      "path": "emotion2vec_plus_base.onnx",
+      "bytes": 373159295,
+      "sha256": "a9ddcc2f4254c3da1dc2a51ea5e38df32e2a84724519e343499f05f0ea2b3506"
+    },
+    {
+      "path": "emotion2vec_head.json",
+      "bytes": 128472,
+      "sha256": "69666ff0d2873f016f5a8187b685e32a2c419130876bf97b069c981c44cfe02c",
+      "gitBlobSha1": "69cc14661667666378c18d2b14d55eb4a33e8001"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 5306,
+      "sha256": "7dba975a2069691db4992b0592d70828b330d2f8a30a71450f4e152a554e84f8",
+      "gitBlobSha1": "d5cc52aad23a88da10b8cffbd9b56d43ac7398fa"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2328,
+      "sha256": "308f01fe51f8e1bc739615dff4a43546733e6c57de20d7b533d15d965a172045",
+      "gitBlobSha1": "f3589d8ee6931dbf5b11b14e94ee1406a024b11f"
+    }
+  ]
+}

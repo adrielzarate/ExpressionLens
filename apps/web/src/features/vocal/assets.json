@@ -1,0 +1,38 @@
+{
+  "modelId": "onnx-community/wav2vec2-base-superb-er-ONNX",
+  "revision": "e2191e9e8b692c19c7d96e2a1d789ab1df5b7259",
+  "dtype": "q4",
+  "license": "Apache-2.0",
+  "publicPath": "models/vocal-expression/e2191e9e8b692c19c7d96e2a1d789ab1df5b7259",
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 2494,
+      "gitBlobSha1": "eef3c4c5d69a805745e66a003dfe205a5b2a6db3",
+      "sha256": "949cefff2a0214d29c70097e98451f2d448c9f53677ff9aa92df336ad7dd98dd"
+    },
+    {
+      "path": "preprocessor_config.json",
+      "bytes": 215,
+      "gitBlobSha1": "10f6def8c83d70a2b087a567dcf523b75152a80b",
+      "sha256": "99272fe8ccfab114b68b478681ea47ee3a1ce62bb788cb92dd6e4f69fb1f1da2"
+    },
+    {
+      "path": "onnx/model_q4.onnx",
+      "bytes": 89861131,
+      "sha256": "f7e09610480e331ffb3055c381b64001de623da55334a0f3fb4bd36cafb0d1c0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4106,
+      "gitBlobSha1": "6f5ca956bff069c052988a427d6211e671a44571",
+      "sha256": "5a44cf8e93795a4b6f55cfda1619352165c3af01142c3af0749e792ec47626ba"
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "source": "installed-apache-license"
+    }
+  ]
+}

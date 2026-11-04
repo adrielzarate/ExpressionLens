@@ -1,0 +1,21 @@
+{
+  "name": "@expressionlens/classifier",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./vite": "./vite.mjs"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --pretty false",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "^1.2.0",
+    "@tensorflow/tfjs": "^4.22.0"
+  },
+  "peerDependencies": {
+    "vite": "^8.3.5"
+  }
+}

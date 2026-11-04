@@ -1,0 +1,15 @@
+node_modules
+packages/classifier/.generated
+dist
+package-lock.json
+test-results
+playwright-report
+.certs
+
+references
+packages/classifier/models
+
+# Vendored Whisper files must retain the upstream byte-for-byte hashes.
+apps/web/public/models/whisper-tiny-q8/
+
+apps/web/public/models/vocal-expression/

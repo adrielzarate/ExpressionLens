@@ -1,0 +1,47 @@
+.heuristic-debug {
+  overflow-wrap: anywhere;
+}
+.heuristic-debug details {
+  margin-block: 12px;
+}
+.heuristic-scores {
+  display: grid;
+  gap: 6px;
+  margin-block: 12px;
+}
+.heuristic-scores > div {
+  display: grid;
+  grid-template-columns: 65px minmax(40px, 1fr) 45px;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+.heuristic-scores meter {
+  width: 100%;
+  accent-color: #64745e;
+}
+.heuristic-scores output {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.heuristic-thresholds {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin-block: 12px;
+}
+.heuristic-thresholds label {
+  display: grid;
+  gap: 4px;
+  font-size: 11px;
+}
+.heuristic-thresholds input {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 6px;
+  border: 1px solid #d5ddce;
+  border-radius: 4px;
+  background: #fff;
+  color: inherit;
+}

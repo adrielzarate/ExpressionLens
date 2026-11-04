@@ -1,0 +1,21 @@
+{
+  "name": "@expressionlens/web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --pretty false",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "4.3.2",
+    "@expressionlens/classifier": "*",
+    "onnxruntime-web": "1.31.0-dev.20260914-8d85527a0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "description": "AI-powered expression analysis"
+}

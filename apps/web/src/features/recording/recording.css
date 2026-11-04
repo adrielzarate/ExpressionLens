@@ -1,0 +1,28 @@
+.recording-live {
+  display: block;
+  width: 100%;
+  max-height: 480px;
+  min-height: 180px;
+  background: #18221b;
+  border-radius: 8px;
+  transform: scaleX(-1);
+}
+.recording-panel > [role='status'] {
+  font-weight: 600;
+}
+.recording-panel .recording-time {
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  color: #365d40;
+}
+.recording-notice {
+  padding: 12px;
+  background: #fff7e8;
+  border-radius: 6px;
+}
+.recording-entry {
+  margin-top: 14px;
+}
+.recording-panel .recording-indicator {
+  color: #9d3027;
+}
